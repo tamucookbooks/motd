@@ -1,0 +1,43 @@
+
+                                *************
+                                *     *     *
+                                *     *     *
+                                      *
+                                 *    *  ** **
+                                * *   *  * * *
+                               *****  *  *   *
+                              *     * *  *   *
+
+*******************************************************************************
+*  This computer system and data herein are available only for authorized     *
+*  purposes by authorized users. Use for any other purpose may result in      *
+*  administrative/disciplinary actions or criminal prosecution against the    *
+*  user. Usage may be subject to security testing and monitoring. Applicable  *
+*  privacy laws establish the expectations of privacy.                        *
+*                                                                             *
+*******************************************************************************
+
+Powered by Chef
+
+Part of the <%= node.chef_environment %> environment.
+
+<% if @include_run_list -%>
+Chef Runlist:
+  <% node.run_list.run_list_items.each do |item| %>
+  * <%= item %>
+  <% end -%>
+<% end -%>
+
+<% if @include_roles -%>
+Chef Roles:
+  <% node.roles.each do |role| %>
+  * <%= role %>
+  <% end -%>
+<% end -%>
+
+<% if @include_tags -%>
+Chef Tags:
+  <% node.tags.each do |t| %>
+  * <%= t %>
+  <% end -%>
+<% end -%>
