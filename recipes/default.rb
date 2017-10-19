@@ -43,6 +43,7 @@ template motd_file do
   variables(
     include_run_list: node['motd']['include_run_list'],
     include_tags: node['motd']['include_tags'],
-    include_roles: node['motd']['include_roles']
+    include_roles: node['motd']['include_roles'],
+    include_annoying_atm: node['motd']['include_annoying_atm']
   )
 end
