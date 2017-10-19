@@ -27,7 +27,13 @@
 case node['platform_family']
 when 'rhel', 'omnios'
   motd_file = '/etc/motd'
-when
+when 'debian'
+  if (node['platform'] == 'ubuntu') && (node['platform_version'] > '12.04')
+    motd_file = '/etc/motd'
+  else
+    motd_file = '/etc/motd.tail'
+  end
+else
   motd_file = '/etc/motd.tail'
 end
 
