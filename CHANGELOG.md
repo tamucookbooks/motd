@@ -1,5 +1,9 @@
 # CHANGELOG for motd
 
+## 0.2.1
+
+* add wording for University Rule 29.01.03.M2, Rules for Responsible Computing
+
 ## 0.2.0
 
 * add attribute to allow toggle of annoying ascii aTm
