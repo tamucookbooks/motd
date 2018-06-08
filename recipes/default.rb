@@ -44,6 +44,7 @@ template motd_file do
     include_run_list: node['motd']['include_run_list'],
     include_tags: node['motd']['include_tags'],
     include_roles: node['motd']['include_roles'],
-    include_annoying_atm: node['motd']['include_annoying_atm']
+    include_annoying_atm: node['motd']['include_annoying_atm'],
+    include_suppress_legalese: node['motd']['suppress_legalese']
   )
 end

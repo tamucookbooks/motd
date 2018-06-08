@@ -36,8 +36,9 @@
                            .DDDDDDDDDDDDDDDDDDD..DD?
                            .DDDDDDDDDDDDDDDDDDDDDDD?
                            .DDDDDDDDDDDDDDDDDDDDDDD?
-<% end -%>
 
+<% end -%>
+<% if @include_suppress_legalese -%>
 *******************************************************************************
 *                                                                             *
 *  This computer system and data herein are available only for authorized     *
@@ -49,6 +50,7 @@
 *                                                                             *
 *******************************************************************************
 
+<% end -%>
 Powered by Chef
 
 Part of the <%= node.chef_environment %> environment.
