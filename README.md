@@ -31,6 +31,12 @@ Attributes
     <td><tt>true</tt></td>
   </tr>
   <tr>
+    <td><tt>['motd']['include_annoying_atm']</tt></td>
+    <td>Boolean</td>
+    <td>whether to include the ASCII aTm in motd</td>
+    <td><tt>true</tt></td>
+  </tr>
+  <tr>
     <td><tt>['motd']['suppress_legalese']</tt></td>
     <td>Boolean</td>
     <td>whether to include the legalese section in motd</td>
