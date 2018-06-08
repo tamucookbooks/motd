@@ -1,6 +1,11 @@
 # CHANGELOG for motd
 
-## 0.2.2
+## 0.2.3
+
+* fix logic error in 0.2.2's legalese template
+* add missing documentation of include annoying aTm
+
+## 0.2.2 (not released)
 
 * add attribute to allow toggle of legalese section of the motd
 
