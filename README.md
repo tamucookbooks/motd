@@ -30,6 +30,12 @@ Attributes
     <td>whether to include chef run_list in motd</td>
     <td><tt>true</tt></td>
   </tr>
+  <tr>
+    <td><tt>['motd']['suppress_legalese']</tt></td>
+    <td>Boolean</td>
+    <td>whether to include the legalese section in motd</td>
+    <td><tt>false</tt></td>
+  </tr>
 </table>
 
 Usage
