@@ -1,5 +1,9 @@
 # CHANGELOG for motd
 
+## 0.2.4
+
+* merge of amikeal's update to more closely align with TAMU security control AC-8
+
 ## 0.2.3
 
 * fix logic error in 0.2.2's legalese template
